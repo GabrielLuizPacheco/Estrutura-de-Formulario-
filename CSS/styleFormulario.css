@@ -1,0 +1,32 @@
+body{
+    font-family: Arial;
+    
+}
+#cabecalho{
+    text-align: center;
+    color:white;
+    background-color: #191970;
+    margin: 0 auto;
+    width: 1000px;
+    height: 50px;
+    line-height: 50px;
+    padding: 10 0 0 10;
+}
+
+#rodape{
+    margin: 0 auto;
+    position: absolute; 
+    width: 1000px;
+    height: 50px;
+    background-color: #191970;
+    text-align: center;
+    color:white;
+}
+fieldset{
+    width: 55%;
+    border: 5px solid gold;
+    
+    
+    
+}
+

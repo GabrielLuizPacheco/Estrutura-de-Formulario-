@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/styleFormulario.css">
+    <script src="../javaScript/formulariojs.js"></script>
+</head>
+<body>
+    
+    <div id="cabecalho">
+        <header>
+            <h1>Formulário de Agendamento</h1>
+        </header>
+    </div><br>
+
+    <div class="site" align="center">
+        
+        <form name="meuForm" id="meuForm" >
+
+            <Fieldset>
+            
+                <legend><b>Formulário</b></legend>
+                
+                <br><left>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" required="required" name="nome" placeholder="Nome Completo">
+                </left>
+
+                <mid>
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" required="required" name="nascimento" >
+                </mid><br><br>
+
+                <left>
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" required="required" name="telefone" placeholder="Telefone">
+                </left>&ensp;
+
+                <mid>
+                    <label for="email">e-mail:</label>
+                    <input type="text" id="email" required="required" name="email" placeholder="e-mail">&emsp;&emsp;
+                </mid>&ensp;&ensp;<br><br>
+
+                <left>
+                    <label for="CPF">CPF:</label>
+                    <input type="text" id="CPF" required="required" name="CPF" placeholder="CPF">
+                </left>&ensp;
+
+                <mid>
+                    <label for="sexo">Sexo:</label>&ensp;
+                    
+                    <label for="mulher">F</label>
+                    <input type="radio" id="mulher" required="required" name="sexo" value="F">&ensp;
+                    <label for="homem">M</label>
+                    <input type="radio" id="homem" required="required" name="sexo" value="M">&emsp;&emsp;&emsp;&emsp;
+                    &emsp;&emsp;&emsp;&emsp;&emsp;
+
+                </mid>&ensp;<br><br>
+                
+            
+                <left>
+
+                <label for="motivo" name="motivo">Motivo:</label>
+                
+                <select id="motivo" required="required" name="motivo"> <!--size="04" multiple, mostrar caixa com n itens-->
+
+                <option value="visita">visita</option>
+                <option value="venda">venda</option>
+                <option value="trabalhar conosco">Trabalhar conosco</option>
+
+                </select>
+
+                </left>&emsp;
+
+                <mid>
+                    
+                    <label>Periodo:</label>&ensp;
+                    
+                    <label for="pmanha">Manha</label>
+                    <input type="radio" id="manha" required="required" name="periodo" value="manha">&ensp;
+                    <label for="ptarde">Tarde</label>
+                    <input type="radio" id="tarde" required="required" name="periodo" value="tarde">&emsp;&emsp;&emsp;&emsp;
+                    &emsp;
+                    
+                </mid><br><br>
+
+                <form>
+                    <label>Detalhes:</label><br>
+                    <textarea name="detalhes" rows="10" cols="50" maxlength="150" placeholder="Opcinal" ></textarea>
+            
+                </form>
+                
+                <mid>
+                    <p>
+                        <b>Este é um questionário não obrigatório.</b><br><br>
+                        
+                        O que podemos mudar nestes formulário ?
+
+                    </p>
+
+                    <section id="botoesCheckBox">
+                        
+                        <input type="checkbox" name="aparenci" value="aparencia"> Aparência<br>
+                        <input type="checkbox" name="conteudo" value="conteudo"> Conteúdo <br>				
+                        &ensp;&emsp;<input type="checkbox" name="acessibilidade" value="acessibilidade">Acessibilidade<br>
+                        
+                    </section><br><br>
+                    
+                    <label >Qual sua cor favorita ?</label>
+                    
+                    <input type="color" id="color" placeholder="Escolha uma cor" required="required" name="color"/><br><br><br>
+
+                </mid>
+
+                <form oninput="x.value=parseInt(a.value)">
+                
+                    <label >Escolha um número de 0 à 100.</label><br><br>
+                
+                    0
+                    <input type="range" id="a" name="a" value="0">
+                    100
+                    =
+                    <output name="x" for="a"></output>
+                    <br><br>
+                    
+                
+                </form><br><br>
+
+                <input type="submit" value="Enviar" onclick="salvar()">
+                
+                
+                
+            
+            </Fieldset>
+        
+        </form>
+        
+    </div><br>
+
+    <div id="rodape">
+        <footer>
+            <h6>Todos os direitos reservados</h6>
+        </footer>
+    </div>
+    
+</body>
+</html>
